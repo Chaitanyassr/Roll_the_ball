@@ -34,6 +34,17 @@ transform = Transform( 0.643226, 0.698441, -0.313752, -0.627743, 0.715667, 0.306
 shape = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Box2"]
+transform = Transform( 1, 0, -5.96046e-008, 0, 1, -2.98023e-008, -5.96046e-008, 0, 1, -5.27986, 0.220169, 0.532326 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
+
+[node name="Box3" type="RigidBody" parent="."]
+transform = Transform( 0.643226, 0.698441, -0.313752, -0.627743, 0.715667, 0.3062, 0.438405, 0, 0.898778, 0, 7.24966, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Box3"]
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Box3"]
 mesh = SubResource( 2 )
 material/0 = SubResource( 3 )
 
