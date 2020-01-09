@@ -14,7 +14,7 @@ func _physics_process(delta):
 	elif Input.is_action_pressed("ui_left"):
 			velocity.x = -5
 			
-	if Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("ui_up") and Input.is_action_pressed("ui_down"):
 		velocity.x = 0
 	if Input.is_action_pressed("ui_up"):
 			velocity.z = -5
