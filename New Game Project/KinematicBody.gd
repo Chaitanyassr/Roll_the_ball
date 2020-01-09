@@ -1,5 +1,7 @@
 extends KinematicBody
-onready var name1 = "player" 
+
+var velocity = Vector3()
+  
 
 func _ready():
 	pass 
